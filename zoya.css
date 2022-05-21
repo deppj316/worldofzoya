@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Grape Nuts', cursive;
+}
+.header img{
+    width: 100%;
+    height: 600px;
+}
+.header1 img{
+    display: none;
+}
+.home{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 400px;
+}
+.home .carousel-item{
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.home .carousel-item:before{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+#txt-white p{
+	color: white;
+}
+.home .carousel-item .container{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.home .carousel-item p{
+	font-size: 40px;
+	margin:0;
+	color: black;
+	opacity:0;
+	padding-top: 50%;
+}
+.home .carousel-item.active h2{
+	animation: fadeInLeft 0.5s ease forwards;
+}
+.home .carousel-item.active p{
+	animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeInRight{
+	0%{
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.home .carousel-controls{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	z-index: 10;
+	transform: translateX(-50%);
+}
+
+.home .carousel-indicators{
+	position: relative;
+	margin:0;
+}
+
+.home .carousel-indicators li{
+	height: 70px;
+	width: 70px;
+	margin:0 5px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	border:3px solid transparent;
+	transition: all 0.3s ease;
+}
+.home .carousel-indicators li.active{
+	border-color: black;
+	transform: scale(1.2);
+}
+
+.home .carousel-control-next, 
+.home .carousel-control-prev{
+	height: 60px;
+	width: 60px;
+	opacity: 1;
+	z-index: 3;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+.home .carousel-control-next:hover, 
+.home .carousel-control-prev:hover{
+   box-shadow: 0 0 10px black;
+}
+.home .carousel-control-next img, 
+.home .carousel-control-prev img{
+   width: 30px;
+}
+.home .carousel-control-next{
+	right: -90px;
+}
+.home .carousel-control-prev{
+	left: -90px;
+}
+#section-b{
+	background-image: url("img/G-_BABY_texture-2.jpg");
+	background-position: center;
+	background-size: 100% 100%;
+	height: auto;
+	margin-top: 43%;
+	display: flex;
+	justify-content: space-around;
+	display: -webkit-flex;
+	padding-bottom: 5%;
+}
+#section-b h2{
+font-size: 38px;
+}
+.poem h2{
+	padding-top: 33%;
+	padding-left: 1%;
+}
+.ani{
+	width: 50%;
+	height: 400px;
+	animation: imgs 5s infinite;
+	margin-top: 5%;
+	padding: 20%;
+	-webkit-animation:imgs 5s infinite ;
+}
+@-webkit-keyframes imgs{
+		0%{
+			background-image: url("img/WhatsApp Image 2022-05-21 at 1.14.11 PM.jpeg");
+			background-position: center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			border: 4px dashed pink;
+			padding: 20%;
+		}
+		50%{
+		background-image: url("img/WhatsApp Image 2022-05-21 at 11.27.06 AM (2).jpeg");
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		border: 4px dashed pink;
+			padding: 20%;
+	}
+		75%{
+			background-image: url("img/WhatsApp Image 2022-05-21 at 11.27.07 AM (1).jpeg");
+			background-position: center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			border: 4px dashed pink;
+			padding: 20%;
+		}
+		100%{
+			background-image: url("img/WhatsApp Image 2022-05-21 at 11.27.05 AM (2).jpeg");
+			background-position: center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			border: 4px dashed pink;
+			padding: 20%;
+		}
+	}
+@keyframes imgs{
+	0%{
+		background-image: url("img/WhatsApp Image 2022-05-21 at 1.14.11 PM.jpeg");
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		border: 4px dashed pink;
+		padding: 20%;
+	}
+	50%{
+	background-image: url("img/WhatsApp Image 2022-05-21 at 11.27.06 AM (2).jpeg");
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border: 4px dashed pink;
+		padding: 20%;
+}
+	75%{
+		background-image: url("img/WhatsApp Image 2022-05-21 at 11.27.07 AM (1).jpeg");
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		border: 4px dashed pink;
+		padding: 20%;
+	}
+	100%{
+		background-image: url("img/WhatsApp Image 2022-05-21 at 11.27.05 AM (2).jpeg");
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		border: 4px dashed pink;
+		padding: 20%;
+	}
+}
+.collage img{
+	width: 100%;
+	height: 700px;
+}
+#section-d{
+	margin-top: 10%
+}
+.img2{
+	height: 400px;
+}
+.flex1{
+	display: flex;
+	justify-content: center;
+}
+.flex1 img{
+	height: 300px;
+	/* border:  4px dashed pink; */
+	padding: 2%;
+}
+ .img3, .img3, .img4, .img5, .img6, .img7, .img8, .img9{
+	border: 4px dashed pink;
+}
+#section-e{
+	margin: 4%;
+}
+#section-e p{
+	text-align: center;
+	font-size: 40px;
+	color:blue;
+}
+.image img{
+	height: 500px;
+	clip-path: circle();
+	display: block;
+	margin: auto;
+}
+h2{
+	text-align: center;
+    font-size: 50px;
+  filter: drop-shadow( 5px 5px 5px rgb(0, 0, 0));
+  }
+.img11{
+	   height: 500px;
+   animation: moveup 20s linear; 
+  -webkit-animation: moveup 20s linear; 
+animation-delay: 1s;
+visibility: hidden; 
+animation-fill-mode: forwards;
+}
+.img12{
+  float: right;
+  height: 500px;
+   animation: moveup 20s linear; 
+  -webkit-animation: moveup 20s linear; 
+animation-delay: 1s;
+visibility: hidden; 
+animation-fill-mode: forwards;
+}
+@-webkit-keyframes moveup{
+  0%{
+	 transform: translateY(100px);
+	 visibility: visible;
+   }
+   100%{
+	transform: translateY(-1000px);
+	visibility: visible;
+  }
+}
+ @keyframes moveup{
+   0%{
+	 transform: translateY(100px);
+	 visibility: visible;
+   }
+   100%{
+	transform: translateY(-1000px);
+	visibility: hidden;
+  }
+}
+/* #section-h img{
+	border: none;
+} */
+/*responsive*/
+@media only screen and (max-width: 767px){
+  .home .carousel-control-next, 
+  .home .carousel-control-prev{
+  	display: none;
+  }
+  .home .carousel-indicators li{
+  	height: 60px;
+  	width: 60px;
+  }
+  .home .carousel-item p{
+  	font-size: 30px;
+  }
+  .header img{
+	  display: none;
+  }
+  .header1 img{
+	 height:auto;
+	 width: 100%;
+	  display: block;
+  }
+  .home{
+	  margin: 0;
+	  height: auto;
+  }
+  #section-b {
+	  margin: 0;
+	  display: block;
+  }
+  .ani {
+    width: 90%;
+    height: 400px;
+       margin: 5%;
+  }
+  .collage img {
+     height: auto;
+}
+#section-d{
+	margin: 0;
+	padding: 5%;
+}
+.flex1{
+	display: block;
+	margin: auto;
+}
+.flex1 img {
+      display: block;
+    margin: auto;
+}
+.img11, .img12{
+	height: 300px;
+}
+.image img {
+    height: 400px;}
+	.flex1 .img2, .img3, .img5, .img8, .img10{
+		width: 95%;
+	}
+	}
+	/* end  */
+	/* Tablet */
+	@media only screen and (min-width: 768px) and (max-width: 991px){
+		.home{
+			margin: 0;
+			height: auto;
+		}
+		#section-b {
+			margin: 0;
+			display: block;
+			padding: 5%;
+		}
+		.ani {
+			width: 90%;
+			height: 600px;
+			   margin: 5%;
+		  }
+		  .poem h2 {
+			  padding: 0;
+			 }
+			 #section-b h2 {
+				font-size: 50px;
+			}
+			#section-d{
+				margin: 0;
+				padding: 5%;
+			}
+			.flex1{
+				display: block;
+				margin: auto;
+			}
+			.flex1 img {
+				  display: block;
+				margin: auto;
+			}
+		}
+		/* end  */
+		/* IPAD PRO */
+		@media only screen and (min-width: 992px) and (max-width: 1200px){
+			.home{
+				margin: 0;
+				height: auto;
+			}
+			#section-b {
+				margin: 0;
+				display: block;
+				padding: 5%;
+			}
+			.ani {
+				width: 90%;
+				height: 600px;
+				   margin: 5%;
+			  }
+			  .poem h2 {
+				  padding: 0;
+				 }
+				 #section-b h2 {
+					font-size: 50px;
+				}
+			}
+         /* END  */
+
+
